@@ -21,6 +21,46 @@
 <link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 <!--//web-fonts-->
+
+<!--//地图-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+<title>HELLO，AMAP!</title>
+<link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+<style>
+	html,
+	body,
+	#container {
+		height: 100%;
+		width: 100%;
+	}
+
+	.amap-icon img,
+	.amap-marker-content img {
+		width: 25px;
+		height: 34px;
+	}
+
+	.cus_info_window {
+		background-color: #fff;
+		padding: 10px;
+	}
+
+	.price {
+		display: flex;
+	}
+
+	.col-md-6 {
+		flex: 1;
+	}
+
+	#map-container {
+		height: 400px;
+	}
+</style>
+<!--//地图-->
+
 </head>
 <body>
 <!--/main-header-->
@@ -37,9 +77,14 @@
 											<span class="icon-bar"></span>
 											<span class="icon-bar"></span>
 										</button>
-										<h1><a  href="index.html"><span>H</span><i class="fa fa-scissors" aria-hidden="true"></i>air Salon  <p class="s-log">For Men Only</p></a>
-												 
-												</h1>
+										<!-- 网站标题 -->
+										<h1>
+											<a href="index2.html"
+											><span>N</span
+												><i class="fa fa-scissors" aria-hidden="true"></i>ice Haircut
+											<p class="s-log">奈斯发艺</p></a
+											>
+										</h1>
 									</div>
 									<!-- navbar-header -->
                                     <div
@@ -70,7 +115,7 @@
                                   <div class="contact-grid1 agileits-w3layouts">
                                     <div class="con-w3l-info">
                                       <h4>地址</h4>
-                                      <p>12K Street<span>New York City.</span></p>
+                                      <p>凌空一街 22-2号6门</p>
                                     </div>
                                     <div class="clearfix"></div>
                                   </div>
@@ -79,7 +124,7 @@
                                   <div class="contact-grid2 w3">
                                     <div class="con-w3l-info">
                                       <h4>电话</h4>
-                                      <p>+1234 567 890</p>
+                                      <p>+86 13504003444</p>
                                     </div>
                                     <div class="clearfix"></div>
                                   </div>
@@ -88,7 +133,7 @@
                                   <div class="contact-grid3 w3l">
                                     <div class="con-w3l-info">
                                       <h4>微信</h4>
-                                      <p><a href="mailto:info@example.com">info@example.com</a></p>
+                                      <p><a href="images/wechat_qrcode.jpg" target="_blank">XIHUI2389</a></p>
                                     </div>
                     
                                     <div class="clearfix"></div>
@@ -117,50 +162,20 @@
 <!-- //work -->
 	<!-- about-bottom -->
 	<div class="price" id="price">
-	    <div class="col-md-6 w3l_about_bottom_right">
+		<div class="col-md-6 w3l_about_bottom_right">
 			<div class="title-agileits1">
-                    <h3>导航</h3> 
-			   </div>
-			<p>可以列出几种交通方式</p>
-					<div class="price-list">
-								<div class="wthree-grids-price">
-									<h4>Haircut</h4>
-									<h5> $40</h5>
-									<div class="clearfix"> </div>
-								</div>
-									<div class="wthree-grids-price">
-									<h4> Shave</h4>
-									<h5> $30</h5>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="wthree-grids-price">
-									<h4>Haircut + Shave</h4>
-									<h5> $80</h5>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="wthree-grids-price">
-									<h4>Trim (Back and Sides)</h4>
-									<h5> $35</h5>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="wthree-grids-price">
-									<h4>Beard Trim</h4>
-									<h5> $16</h5>
-									<div class="clearfix"> </div>
-								</div>
-							</div>
+				<h3>交通方式</h3>
+			</div>
+			<p>这里可以列出几种交通方式，例如公交、地铁等</p>
 		</div>
-		<div class="col-md-6 w3l_about_bottom_left">
-		        
+		<div class="col-md-6 w3l_about_bottom_right">
+			<!-- 在此处嵌入地图 -->
+			<!-- 示例：Google Maps 地图 -->
+			<iframe src="https://m.amap.com/navi/?dest=123.375694,41.767428&destName=奈斯发艺||凌空一街22-2号6门&hideRouteIcon=1&key=3124cbf6e9386099a09bade6b5ed24d9" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</div>
-		
 		<div class="clearfix"> </div>
 	</div>
 	
-			<!--//content-inner-section-->
-<!-- blog -->
-
-	</div>
 	<!-- //blog -->
 
 
@@ -175,17 +190,18 @@
             </div>
             <div class="w3ls_footer_grid_leftr">
               <h4>地址</h4>
-              <p>3030 New York, NY, USA</p>
+              <p>辽宁省 沈阳市 凌空一街 22-2号6门</p>
             </div>
             <div class="clearfix"></div>
           </div>
           <div class="col-md-4 w3ls_footer_grid_left">
             <div class="w3ls_footer_grid_leftl">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <i class="fa fa-comments-o" aria-hidden="true"></i>
             </div>
             <div class="w3ls_footer_grid_leftr">
-              <h4>微信</h4>
-              <a href="mailto:info@example.com">info@example.com</a>
+				<!-- 在新窗口或标签页中打开微信号添加页面 -->
+				<h4>微信</h4>
+				<a href="images/wechat_qrcode.jpg" target="_blank">XIHUI2389</a>
             </div>
             <div class="clearfix"></div>
           </div>
@@ -195,7 +211,7 @@
             </div>
             <div class="w3ls_footer_grid_leftr">
               <h4>电话</h4>
-              <p>(+000) 003 003 0052</p>
+              <p>(+86) 135 0400 3444</p>
             </div>
             <div class="clearfix"></div>
           </div>
