@@ -321,12 +321,12 @@ nav.linkEffects.linkHoverEffect_12 ul li a span {
 }
 p.s-log {
      color: #fbb034;
-    line-height: 1px;
+    line-height: 2px;
     text-align: right;
     font-weight: 400;
-    letter-spacing: 4px;
-    margin-top: -11px;
-    font-size: 0.4em;
+    letter-spacing: 6px;
+    margin-top: -10px;
+    font-size: 0.7em;
 }
 ul.nav.navbar-nav{
     margin-left: 21em;
