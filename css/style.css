@@ -36,6 +36,18 @@ input[type="submit"],.w3l_header_left ul li a,.related-post-right h4 a,.comments
 	-ms-transition: .5s ease-in;
 }
 /*--/model--*/
+
+.responsive-image-container {  
+    width: 100%; /* 容器宽度设置为100%，以适应其父元素的宽度 */  
+    overflow: hidden; /* 防止图片溢出容器 */  
+}  
+  
+.responsive-image-container img {  
+    width: 100%; /* 图片宽度设置为100%，以适应容器的宽度 */  
+    height: auto; /* 高度自动调整，以保持图片的纵横比 */  
+    display: block; /* 确保图片作为块级元素显示 */  
+}
+
 .modal-content {
     position: relative;
     background-color: #fff;
@@ -321,11 +333,11 @@ nav.linkEffects.linkHoverEffect_12 ul li a span {
 }
 p.s-log {
      color: #fbb034;
-    line-height: 2px;
+    line-height: 1px;
     text-align: right;
     font-weight: 400;
-    letter-spacing: 6px;
-    margin-top: -10px;
+    letter-spacing: 4px;
+    margin-top: -11px;
     font-size: 0.7em;
 }
 ul.nav.navbar-nav{
